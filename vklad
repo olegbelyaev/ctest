@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+  int i, k, p, x, y, s;
+    s = 0;
+    i = 0;
+    cin>>p>>x>>y>>k;//p процентов x рублей y копеек на k лет 
+    while (i < k){
+    i = i + 1;
+       s = y + x * 100;
+    s = s + s * p / 100;
+    x = s / 100;//рубли
+    y = s - x * 100;//копейки  
+    }
+    cout<<x<<" "<<y;
+  return 0;
+}
